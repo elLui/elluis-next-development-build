@@ -1,7 +1,8 @@
 import 'sanitize.css';
 import 'sanitize.css/forms.css';
 import 'sanitize.css/typography.css';
-import 'styles/globals.css'
+import '@/styles/globals.scss'
+import '@/styles/styles.module.scss';
 
 
 import BackgroundVideo from "@/components/background/background";

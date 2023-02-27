@@ -1,0 +1,20 @@
+/* Error: Duplicate key.
+ *     ,
+ * 10  |         'opacity': 'opacity',
+ *     |         ========= first key
+ * ... |
+ * 67  |         'opacity': 'opacity',
+ *     |         ^^^^^^^^^ second key
+ *     '
+ *   names.module.scss 67:9  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Duplicate key.\a     \2577 \a 10  \2502          'opacity': 'opacity',\d\a     \2502          \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  first key\a... \2502 \a 67  \2502          'opacity': 'opacity',\d\a     \2502          ^^^^^^^^^ second key\a     \2575 \a   names.module.scss 67:9  root stylesheet";
+}
