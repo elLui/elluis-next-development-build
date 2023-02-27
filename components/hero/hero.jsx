@@ -1,5 +1,8 @@
 import Image from "next/image";
 
+import styles from "./hero.module.scss";
+import user_image_placeholder from "../../public/assets/images/11.png";
+
 
 
 
@@ -8,13 +11,19 @@ export default function Hero() {
 
 	return (
 
-		<section>
+		<section className={ styles.hero }>
 			<h3>a place</h3>
 
-			
-			<Image src={} alt={}/>
-			<h3>to thing</h3>
-			<h3>of things</h3>
+
+			<div className={ styles.image }>
+			<Image src={ user_image_placeholder } alt={ "user image placeholder" } width={ 1920 } height={ 1080 }/>
+			</div>
+
+			<h1>elluis.codes</h1>
+
+
+			<p>to think</p>
+			<p>of things</p>
 		</section>
 
 	)

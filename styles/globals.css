@@ -2,6 +2,7 @@
 * @source https://fonts.adobe.com/fonts/objektiv-variable
  */
 @import url("https://use.typekit.net/ptz3vfb.css");
+@import url("https://use.typekit.net/ptz3vfb.css");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto&family=Source+Sans+Pro:wght@300&display=swap");
 * {
   box-sizing: border-box;
@@ -50,7 +51,9 @@ body {
 h1,
 h2,
 h3 {
-  font-family: "Oswald", "Roboto", sans-serif;
+  font-family: "louvette-banner", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 a {

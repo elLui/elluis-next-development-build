@@ -15,10 +15,7 @@ import NavMenu from "@/components/navigation/navmenu";
 
 
 
-//	<link rel="stylesheet" href="https://use.typekit.net/ptz3vfb.css">
-//<style>
-//	@import url("https://use.typekit.net/ptz3vfb.css");
-//</style>
+
 
 
 
@@ -32,7 +29,7 @@ export default function RootLayout( { children } ) {
 		<html lang="en">
 		<body>
 		{/* <BackgroundVideo/> */}
-		<NavMenu/>
+		{/* <NavMenu/> */}
 		{ children }
 		</body>
 		</html>
