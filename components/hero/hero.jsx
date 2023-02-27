@@ -11,6 +11,8 @@ export default function Hero() {
 		<section>
 			<h3>a place</h3>
 
+			
+			<Image src={} alt={}/>
 			<h3>to thing</h3>
 			<h3>of things</h3>
 		</section>

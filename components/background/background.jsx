@@ -1,4 +1,4 @@
-import styles from "./background.module.css";
+import styles from "components/background/background.module.scss";
 import background_video from "../../public/assets/video/AdobeStock_255259620.mp4"
 
 
