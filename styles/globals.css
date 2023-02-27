@@ -1,3 +1,6 @@
+/**
+* @source https://fonts.adobe.com/fonts/objektiv-variable
+ */
 @import url("https://use.typekit.net/ptz3vfb.css");
 .example {
   font-family: "objektiv-variable", sans-serif;
@@ -12,10 +15,6 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
   font-family: var(--primary-font);
-  /*2. Create a for...in loop to iterate through the object and set the variable names and associated values.*/
-  /*3. Utilize a for...of loop to set the values of each prefix, center, and suffix variable.*/
-  /*4. Use a map to store the variable names and their associated values.*/
-  /*5. Iterate through the map and create the needed css variable names.*/
   --primary-glow: conic-gradient(
                   from 180deg at 50% 50%,
                   #16abff33 0deg,

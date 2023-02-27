@@ -1,3 +1,6 @@
+/**
+* @source https://fonts.adobe.com/fonts/objektiv-variable
+ */
 @import url("https://use.typekit.net/ptz3vfb.css");
 
 .example {
@@ -8,10 +11,6 @@
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
-  //  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-  //    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-  //    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
-
 
 
   --primary-font: "objektiv-variable", sans-serif;
@@ -21,10 +20,6 @@
 
   font-family: var(--primary-font);
 
-  /*2. Create a for...in loop to iterate through the object and set the variable names and associated values.*/
-  /*3. Utilize a for...of loop to set the values of each prefix, center, and suffix variable.*/
-  /*4. Use a map to store the variable names and their associated values.*/
-  /*5. Iterate through the map and create the needed css variable names.*/
 
   --primary-glow: conic-gradient(
                   from 180deg at 50% 50%,
