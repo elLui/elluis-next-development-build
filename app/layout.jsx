@@ -31,7 +31,7 @@ export default function RootLayout( { children } ) {
 	return (
 		<html lang="en">
 		<body>
-		<BackgroundVideo/>
+		{/* <BackgroundVideo/> */}
 		<NavMenu/>
 		{ children }
 		</body>
