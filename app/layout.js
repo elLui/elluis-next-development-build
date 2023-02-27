@@ -5,6 +5,7 @@ import './globals.css'
 
 
 import BackgroundVideo from "@/components/background/background";
+import NavMenu from "@/components/navigation/navmenu";
 
 
 
@@ -18,7 +19,8 @@ export default function RootLayout( { children } ) {
 	return (
 		<html lang="en">
 		<body>
-		<BackgroundVideo/>
+		{/* <BackgroundVideo/> */}
+		<NavMenu/>
 		{ children }
 		</body>
 		</html>
