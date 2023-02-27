@@ -1,7 +1,7 @@
 import 'sanitize.css';
 import 'sanitize.css/forms.css';
 import 'sanitize.css/typography.css';
-import './globals.css'
+import 'styles/globals.css'
 
 
 import BackgroundVideo from "@/components/background/background";
@@ -19,7 +19,7 @@ export default function RootLayout( { children } ) {
 	return (
 		<html lang="en">
 		<body>
-		{/* <BackgroundVideo/> */}
+		<BackgroundVideo/>
 		<NavMenu/>
 		{ children }
 		</body>
