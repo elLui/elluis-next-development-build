@@ -3,7 +3,6 @@
  */
 @import url("https://use.typekit.net/ptz3vfb.css");
 @import url("https://use.typekit.net/ptz3vfb.css");
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto&family=Source+Sans+Pro:wght@300&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -31,6 +30,14 @@ body {
   --color-success-500: #12bd4b;
   --color-error-100: #f1acc9;
   --color-error-500: #a10c4a;
+  --color-primary: #0e3fbe;
+  --color-primary-dark: #0c1b68;
+  --color-secondary: #e36e2d;
+  --color-secondary-dark: #923809;
+  --color-grey-light-1: #f9f7f6;
+  --color-grey-light-2: #8c92a5;
+  --color-grey-dark-1: #716a66;
+  --color-grey-dark-2: #3f3d39;
   --size-1: 0.25rem;
   --size-2: 0.5rem;
   --size-3: 0.75rem;
@@ -41,11 +48,20 @@ body {
   --size-16: 4rem;
   --size-20: 5rem;
   --size-40: 10rem;
+  --bp-xsmall: 30em;
+  --bp-small: 37.5em;
+  --bp-medium: 50em;
+  --bp-large: 62.5em;
+  --bp-xlarge: 75em;
+  --primary-font: "objektiv-variable", sans-serif;
+}
+
+body {
+  font-family: var(--primary-font);
+  padding: 0;
   margin: 0;
   background-color: var(--color-grey-500);
   color: #252525;
-  --primary-font: "objektiv-variable", sans-serif;
-  font-family: var(--primary-font);
 }
 
 h1,

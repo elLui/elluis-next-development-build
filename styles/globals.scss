@@ -22,14 +22,12 @@
 //font-style: normal;
 
 
-
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto&family=Source+Sans+Pro:wght@300&display=swap');
-
 * {
   box-sizing: border-box;
 }
 
 body {
+
   --color-grey-50: hsl(265, 55%, 96%);
   --color-grey-100: hsl(265, 19%, 88%);
   --color-grey-200: hsl(265, 7%, 70%);
@@ -56,6 +54,19 @@ body {
   --color-error-100: #f1acc9;
   --color-error-500: #a10c4a;
 
+
+  // colors
+  --color-primary: #0e3fbe;
+  --color-primary-dark: #0c1b68;
+  --color-secondary: #e36e2d;
+  --color-secondary-dark: #923809;
+  --color-grey-light-1: #f9f7f6;
+  --color-grey-light-2: #8c92a5;
+  --color-grey-dark-1: #716a66;
+  --color-grey-dark-2: #3f3d39;
+
+
+  // sizes
   --size-1: 0.25rem;
   --size-2: 0.5rem;
   --size-3: 0.75rem;
@@ -67,11 +78,36 @@ body {
   --size-20: 5rem;
   --size-40: 10rem;
 
+  // breakpoints
+  --bp-xsmall: 30em;    //  480px
+  --bp-small: 37.5em;   //  600px
+  --bp-medium: 50em;    //  800px
+  --bp-large: 62.5em;   // 1000px
+  --bp-xlarge: 75em;    // 1200px
+
+
+
+
+  --primary-font: "objektiv-variable", sans-serif;
+
+
+}
+
+body {
+
+
+
+
+  font-family: var(--primary-font);
+  padding: 0;
   margin: 0;
   background-color: var(--color-grey-500);
   color: #252525;
-  --primary-font: "objektiv-variable", sans-serif;
-  font-family: var(--primary-font);
+
+
+
+
+
 }
 
 h1,
