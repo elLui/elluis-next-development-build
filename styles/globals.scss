@@ -22,10 +22,6 @@
 //font-style: normal;
 
 
-* {
-  box-sizing: border-box;
-}
-
 body {
 
   --color-grey-50: hsl(265, 55%, 96%);
@@ -67,6 +63,7 @@ body {
 
 
   // sizes
+  --size-0: 0;
   --size-1: 0.25rem;
   --size-2: 0.5rem;
   --size-3: 0.75rem;
@@ -78,34 +75,56 @@ body {
   --size-20: 5rem;
   --size-40: 10rem;
 
+  --default-size-0: 0;
+
   // breakpoints
-  --bp-xsmall: 30em;    //  480px
-  --bp-small: 37.5em;   //  600px
-  --bp-medium: 50em;    //  800px
-  --bp-large: 62.5em;   // 1000px
-  --bp-xlarge: 75em;    // 1200px
-
-
+  --bp-xsmall: 30em; //  480px
+  --bp-small: 37.5em; //  600px
+  --bp-medium: 50em; //  800px
+  --bp-large: 62.5em; // 1000px
+  --bp-xlarge: 75em; // 1200px
 
 
   --primary-font: "objektiv-variable", sans-serif;
 
+  --primary-display-font: "louvette-banner", serif;
 
+
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
 body {
 
 
+  /**
+  * not sure if this is working as I expect:
+  * @problem: want to make sure that only objecktiv, and sans-serif show, up on user display(properties)
+  * @issue: want to make sure the remainder of the fonts are still available as a backup, but not displayed client side
+  * unless needed
+  * @current: we have grouped our primary font: into a css variable:
 
+    per:   --primary-font: "objektiv-variable", sans-serif;
 
-  font-family: var(--primary-font);
-  padding: 0;
-  margin: 0;
+    we are then calling that as our first argument:
+
+    per: font-family: var(--primary-font) -apple-system, BlinkMacSystemFont, Segoe UI, etc.
+
+    @current-conclusion: at this moment the only fonts being displayed on the user system or the two fonts declared in the
+    --primary-font declaration
+
+    @questions: so far we are unsure about the timing and loading of the two fonts, if they do no load in x time, do the
+    backup fonts kick in
+
+  */
+  font-family: var(--primary-font), -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  padding: var(default-size-0);
+  margin: var(default-size-0);
   background-color: var(--color-grey-500);
-  color: #252525;
-
-
-
+  color: var(--color-grey-dark-2);
 
 
 }
@@ -113,7 +132,9 @@ body {
 h1,
 h2,
 h3 {
-  font-family: "louvette-banner", serif;
+
+
+  font-family: var(--primary-display-font);
   font-weight: 400;
   font-style: normal;
 }
