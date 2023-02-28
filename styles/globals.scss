@@ -97,8 +97,6 @@ body {
 }
 
 body {
-
-
   /**
   * not sure if this is working as I expect:
   * @problem: want to make sure that only objecktiv, and sans-serif show, up on user display(properties)
@@ -117,7 +115,6 @@ body {
 
     @questions: so far we are unsure about the timing and loading of the two fonts, if they do no load in x time, do the
     backup fonts kick in
-
   */
   font-family: var(--primary-font), -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -125,8 +122,6 @@ body {
   margin: var(default-size-0);
   background-color: var(--color-grey-500);
   color: var(--color-grey-dark-2);
-
-
 }
 
 h1,
@@ -137,10 +132,16 @@ h3 {
   font-family: var(--primary-display-font);
   font-weight: 400;
   font-style: normal;
+
 }
 
 a {
+  color: inherit;
   text-decoration: none;
+}
+
+ul {
+  list-style: none;
 }
 
 button {
