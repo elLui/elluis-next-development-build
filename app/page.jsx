@@ -17,7 +17,7 @@ const inter = Inter( { subsets : [ 'latin' ] } )
 export default function Home() {
 	return (
 
-		<Grid>
+		<Grid xs={12} md={6}>
 			<Hero/>
 			<FeaturedPosts/>
 
