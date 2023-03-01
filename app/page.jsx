@@ -1,6 +1,7 @@
 "use client"
 import FeaturedPosts from "@/components/featured-posts/featured-posts";
 import Hero from "@/components/hero/hero";
+import Grid2 from "@mui/material/Unstable_Grid2";
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import { Fragment } from "react";
@@ -18,13 +19,15 @@ const inter = Inter( { subsets : [ 'latin' ] } )
 export default function Home() {
 	return (
 
-		<Grid container spacing={2}>
-			<Grid item xs={12} md={6}>
-				<Hero />
-			</Grid>
-			<Grid item xs={12} md={6}>
-				<FeaturedPosts />
-			</Grid>
-		</Grid>
+		<Grid2 container spacing={ 2 }>
+			<Grid2 item xs={ 12 } md={ 6 }>
+				<Hero/>
+			</Grid2>
+			<Grid2 item xs={ 12 } md={ 6 }>
+				<FeaturedPosts/>
+
+			</Grid2>
+		</Grid2>
+
 	)
 }

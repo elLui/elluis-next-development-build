@@ -10,7 +10,7 @@ export default function Header() {
 
 	return (
 
-		<HeaderStyles>
+		<div className={styles.header}>
 
 			<div className="box green">
 
@@ -18,5 +18,5 @@ export default function Header() {
 
 			</div>
 
-		</HeaderStyles> )
+		</div> )
 }
