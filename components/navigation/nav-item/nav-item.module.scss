@@ -1,0 +1,20 @@
+.navLink {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #555555;
+  text-decoration: none;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #555555;
+    transition: all 0.3s ease;
+  }
+  &:hover::before {
+    width: 100%;
+  }
+}

@@ -1,18 +1,25 @@
-import styles from "./navmenu.module.css";
-import Navbar from "@/components/navigation/navbar/navbar";
+"use client"
+// NavMenu.jsx
+import { nav_data } from "@/data/nav-data";
+import NavItem from "@/components/navigation/nav-item/nav-item";
+import Grid2 from '@mui/material/Unstable_Grid2'; // Grid version 2
+import styles from "components/navigation/navmenu.module.scss";
+
 
 
 
 
 export default function NavMenu() {
+	const navItems = nav_data || [];
 
+	return ( <div className={ styles.navMenu }>
+		<Grid2 container spacing={ 2 }>
 
-	return (
+			<NavItem  item nav-data-item={ {... nav_data }}/>
 
-		<div className={ styles.navMenu }>
-			<Navbar/>
-		</div>
-
-	)
-
+		</Grid2>
+	</div> );
 }
+
+
+
