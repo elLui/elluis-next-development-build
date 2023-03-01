@@ -15,5 +15,17 @@
     font-size: var(--size-16);
   }
 }
+.box {
+  width: 75px;
+  height: 75px;
+  border-radius: 12px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--green);
+  font-weight: 600;
+  color: var(--light);
+  display: block;
+}
 
 /*# sourceMappingURL=all-posts.module.css.map */
