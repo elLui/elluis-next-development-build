@@ -2,6 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@emotion/react': ^11.10.6
+  '@emotion/styled': ^11.10.6
   '@heroicons/react': ^2.0.16
   '@mui/material': ^5.11.11
   '@react-three/fiber': ^8.11.5
@@ -24,8 +25,9 @@ specifiers:
 
 dependencies:
   '@emotion/react': 11.10.6_react@18.2.0
+  '@emotion/styled': 11.10.6_db8de4b29eb5734c4f06a8dd723e1bbf
   '@heroicons/react': 2.0.16_react@18.2.0
-  '@mui/material': 5.11.11_5131278e52e2a81d826457fba30bc559
+  '@mui/material': 5.11.11_286f3a2227719e4cfd9f8254cda27610
   '@react-three/fiber': 8.11.5_fec8f0f1d2c00334e10020191412220a
   clsx: 1.2.1
   css-loader: 6.7.3_webpack@5.75.0
@@ -184,6 +186,26 @@ packages:
     resolution: {integrity: sha512-zxRBwl93sHMsOj4zs+OslQKg/uhF38MB+OMKoCrVuS0nyTkqnau+BM3WGEoOptg9Oz45T/aIGs1qbVAsEFo3nA==}
     dev: false
 
+  /@emotion/styled/11.10.6_db8de4b29eb5734c4f06a8dd723e1bbf:
+    resolution: {integrity: sha512-OXtBzOmDSJo5Q0AFemHCfl+bUueT8BIcPSxu0EGTpGk6DmI5dnhSzQANm1e1ze0YZL7TDyAyy6s/b/zmGOS3Og==}
+    peerDependencies:
+      '@emotion/react': ^11.0.0-rc.0
+      '@types/react': '*'
+      react: '>=16.8.0'
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+    dependencies:
+      '@babel/runtime': 7.21.0
+      '@emotion/babel-plugin': 11.10.6
+      '@emotion/is-prop-valid': 1.2.0
+      '@emotion/react': 11.10.6_react@18.2.0
+      '@emotion/serialize': 1.1.1
+      '@emotion/use-insertion-effect-with-fallbacks': 1.0.0_react@18.2.0
+      '@emotion/utils': 1.2.0
+      react: 18.2.0
+    dev: false
+
   /@emotion/unitless/0.8.0:
     resolution: {integrity: sha512-VINS5vEYAscRl2ZUDiT3uMPlrFQupiKgHz5AA4bCH1miKBg4qtwkim1qPmJj/4WG6TreYMY111rEFsjupcOKHw==}
     dev: false
@@ -318,7 +340,7 @@ packages:
     resolution: {integrity: sha512-0YK0K9GfW1ysw9z4ztWAjLW+bktf+nExMyn2+EQe1Ijb0kF2kz1kIOmb4+di0/PsXG70uCuw4DhEIdNd+JQkRA==}
     dev: false
 
-  /@mui/material/5.11.11_5131278e52e2a81d826457fba30bc559:
+  /@mui/material/5.11.11_286f3a2227719e4cfd9f8254cda27610:
     resolution: {integrity: sha512-sSe0dmKjB1IGOYt32Pcha+cXV3IIrX5L5mFAF9LDRssp/x53bluhgLLbkc8eTiJvueVvo6HAyze6EkFEYLQRXQ==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
@@ -337,9 +359,10 @@ packages:
     dependencies:
       '@babel/runtime': 7.21.0
       '@emotion/react': 11.10.6_react@18.2.0
+      '@emotion/styled': 11.10.6_db8de4b29eb5734c4f06a8dd723e1bbf
       '@mui/base': 5.0.0-alpha.119_react-dom@18.2.0+react@18.2.0
       '@mui/core-downloads-tracker': 5.11.11
-      '@mui/system': 5.11.11_db8de4b29eb5734c4f06a8dd723e1bbf
+      '@mui/system': 5.11.11_bc1fb799f04acb7b8379bd39970b8508
       '@mui/types': 7.2.3
       '@mui/utils': 5.11.11_react@18.2.0
       '@types/react-transition-group': 4.4.5
@@ -368,7 +391,7 @@ packages:
       react: 18.2.0
     dev: false
 
-  /@mui/styled-engine/5.11.11_db8de4b29eb5734c4f06a8dd723e1bbf:
+  /@mui/styled-engine/5.11.11_bc1fb799f04acb7b8379bd39970b8508:
     resolution: {integrity: sha512-wV0UgW4lN5FkDBXefN8eTYeuE9sjyQdg5h94vtwZCUamGQEzmCOtir4AakgmbWMy0x8OLjdEUESn9wnf5J9MOg==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
@@ -384,12 +407,13 @@ packages:
       '@babel/runtime': 7.21.0
       '@emotion/cache': 11.10.5
       '@emotion/react': 11.10.6_react@18.2.0
+      '@emotion/styled': 11.10.6_db8de4b29eb5734c4f06a8dd723e1bbf
       csstype: 3.1.1
       prop-types: 15.8.1
       react: 18.2.0
     dev: false
 
-  /@mui/system/5.11.11_db8de4b29eb5734c4f06a8dd723e1bbf:
+  /@mui/system/5.11.11_bc1fb799f04acb7b8379bd39970b8508:
     resolution: {integrity: sha512-a9gaOAJBjpzypDfhbGZQ8HzdcxdxsKkFvbp1aAWZhFHBPdehEkARNh7mj851VfEhD/GdffYt85PFKFKdUta5Eg==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
@@ -407,8 +431,9 @@ packages:
     dependencies:
       '@babel/runtime': 7.21.0
       '@emotion/react': 11.10.6_react@18.2.0
+      '@emotion/styled': 11.10.6_db8de4b29eb5734c4f06a8dd723e1bbf
       '@mui/private-theming': 5.11.11_react@18.2.0
-      '@mui/styled-engine': 5.11.11_db8de4b29eb5734c4f06a8dd723e1bbf
+      '@mui/styled-engine': 5.11.11_bc1fb799f04acb7b8379bd39970b8508
       '@mui/types': 7.2.3
       '@mui/utils': 5.11.11_react@18.2.0
       clsx: 1.2.1
