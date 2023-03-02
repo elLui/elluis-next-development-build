@@ -1,9 +1,11 @@
 /**
+* Adobe Fonts Imports
 * @source https://fonts.adobe.com/fonts/objektiv-variable
+* @source https://fonts.adobe.com/fonts/louvette-banner-variable
  */
 @import url("https://use.typekit.net/ptz3vfb.css");
 @import url("https://use.typekit.net/ptz3vfb.css");
-body {
+:root {
   --color-grey-50: hsl(265, 55%, 96%);
   --color-grey-100: hsl(265, 19%, 88%);
   --color-grey-200: hsl(265, 7%, 70%);
@@ -45,14 +47,20 @@ body {
   --size-16: 4rem;
   --size-20: 5rem;
   --size-40: 10rem;
-  --default-size-0: 0;
+  --default-margin-size: 0;
+  --default-padding-size: 0;
   --bp-xsmall: 30em;
   --bp-small: 37.5em;
   --bp-medium: 50em;
   --bp-large: 62.5em;
   --bp-xlarge: 75em;
+}
+
+body {
   --primary-font: "objektiv-variable", sans-serif;
   --primary-display-font: "louvette-banner", serif;
+  --primary-display-font-weight: 575;
+  --primary-display-font-size: 2.64em;
 }
 
 *, *::before, *::after {
@@ -80,17 +88,18 @@ body {
     backup fonts kick in
   */
   font-family: var(--primary-font), -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  padding: var(default-size-0);
-  margin: var(default-size-0);
   background-color: var(--color-grey-500);
   color: var(--color-grey-dark-2);
+  padding: var(--default-padding-size);
+  margin: var(--default-margin-size);
 }
 
 h1,
 h2,
 h3 {
   font-family: var(--primary-display-font);
-  font-weight: 400;
+  font-weight: var(--primary-display-font-weight);
+  font-size: var(--primary-display-font-size);
   font-style: normal;
 }
 
@@ -106,6 +115,14 @@ ul {
 button {
   font: inherit;
   cursor: pointer;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  padding-top: 0.1px;
 }
 
 /*# sourceMappingURL=globals.css.map */

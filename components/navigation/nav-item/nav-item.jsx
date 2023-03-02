@@ -13,21 +13,27 @@ import styles from "components/navigation/nav-item/nav-item.module.scss";
 
 export default function NavItem( { nav_data } ) {
 
-//	const { id, label, link, isActive, icon } = nav_data;
+	//	const { id, label, link, isActive, icon } = nav_data;
 
 
 
 
 	return (
-		<Grid2 item spacing={0} xs={12} sm={6} md={4} lg={3}>
-			{/* <li className={ styles.navItem }> */}
-			{/* 	<Link href={ link } className={ styles.navLink } title={ label }> */}
-			{/* 		{ id }:{ label }:{ link }:{ isActive }:{ icon } */}
+		//		<Grid2 item spacing={0} xs={12} sm={6} md={4} lg={3}>
+		//			<li className={ styles.navItem }>
+		//				<Link href={ link } className={ styles.navLink } title={ label }>
+		//					{ id }:{ label }:{ link }:{ isActive }:{ icon }
+		//
+		//				</Link>
+		//			<h1>hello elluis, you are special today</h1>
+		//			</li>
+		//		</Grid2>
 
-			{/* 	</Link> */}
-			<h1>hello elluis, you are special today</h1>
-			{/* </li> */}
-		</Grid2>
+		<>
+			<h1>Nav Item Placeholder</h1>
+
+		</>
+
 	);
 }
 
