@@ -21,7 +21,6 @@ $mdc-theme-on-background: #442C2E;
 
 
 
-
 // CSS VARIABLES :: INSERTED @ROOT :: TODO :: REFACTOR :: SCSS STYLE ENGINE
 :root {
 	// default colors I
@@ -79,7 +78,8 @@ $mdc-theme-on-background: #442C2E;
 	--size-40: 10rem;
 
 	// default sizes
-	--default-size-0: 0;
+	--default-margin-size: 0;
+	--default-padding-size: 0;
 
 	// breakpoints
 	--bp-xsmall: 30em; //  480px
@@ -87,7 +87,6 @@ $mdc-theme-on-background: #442C2E;
 	--bp-medium: 50em; //  800px
 	--bp-large: 62.5em; // 1000px
 	--bp-xlarge: 75em; // 1200px
-
 
 
 
@@ -104,6 +103,7 @@ body {
 
 	// display fonts
 	--primary-display-font: "louvette-banner", serif;
+	--primary-display-font-weight: 400;
 
 	//
 
@@ -146,11 +146,10 @@ body {
 	color: var(--color-grey-dark-2);
 
 
-	padding: var(default-size-0);
-	margin: var(default-size-0);
+	padding: var(--default-padding-size);
+	margin: var(--default-margin-size);
 
 
-	padding-top: 0.1px; // prevent header h1 margin from pushing body down
 
 
 	}
@@ -161,7 +160,8 @@ h3 {
 
 
 	font-family: var(--primary-display-font);
-	font-weight: 600;
+	font-weight: var(--primary-display-font-weight);
+//	font-weight: 100;
 	font-style: normal;
 
 	}
@@ -184,3 +184,13 @@ button {
 
 
 // added styles on this experiment
+html, body {
+	height: 100%;
+
+
+	}
+
+body {
+	padding-top: 0.1px; // prevent header h1 margin from pushing body down
+
+	}
