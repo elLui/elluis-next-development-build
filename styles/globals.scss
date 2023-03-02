@@ -103,7 +103,8 @@ body {
 
 	// display fonts
 	--primary-display-font: "louvette-banner", serif;
-	--primary-display-font-weight: 400;
+	--primary-display-font-weight: 575;
+	--primary-display-font-size: 2.64em;
 
 	//
 
@@ -161,7 +162,7 @@ h3 {
 
 	font-family: var(--primary-display-font);
 	font-weight: var(--primary-display-font-weight);
-//	font-weight: 100;
+	font-size: var(--primary-display-font-size);
 	font-style: normal;
 
 	}

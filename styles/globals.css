@@ -59,7 +59,8 @@
 body {
   --primary-font: "objektiv-variable", sans-serif;
   --primary-display-font: "louvette-banner", serif;
-  --primary-display-font-weight: 400;
+  --primary-display-font-weight: 575;
+  --primary-display-font-size: 2.64em;
 }
 
 *, *::before, *::after {
@@ -98,6 +99,7 @@ h2,
 h3 {
   font-family: var(--primary-display-font);
   font-weight: var(--primary-display-font-weight);
+  font-size: var(--primary-display-font-size);
   font-style: normal;
 }
 
