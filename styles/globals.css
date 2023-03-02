@@ -1,9 +1,10 @@
 /**
 * @source https://fonts.adobe.com/fonts/objektiv-variable
+* @source https://fonts.adobe.com/fonts/louvette-banner-variable
  */
 @import url("https://use.typekit.net/ptz3vfb.css");
 @import url("https://use.typekit.net/ptz3vfb.css");
-body {
+:root {
   --color-grey-50: hsl(265, 55%, 96%);
   --color-grey-100: hsl(265, 19%, 88%);
   --color-grey-200: hsl(265, 7%, 70%);
@@ -51,6 +52,9 @@ body {
   --bp-medium: 50em;
   --bp-large: 62.5em;
   --bp-xlarge: 75em;
+}
+
+body {
   --primary-font: "objektiv-variable", sans-serif;
   --primary-display-font: "louvette-banner", serif;
 }
@@ -80,17 +84,18 @@ body {
     backup fonts kick in
   */
   font-family: var(--primary-font), -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  padding: var(default-size-0);
-  margin: var(default-size-0);
   background-color: var(--color-grey-500);
   color: var(--color-grey-dark-2);
+  padding: var(default-size-0);
+  margin: var(default-size-0);
+  padding-top: 0.1px;
 }
 
 h1,
 h2,
 h3 {
   font-family: var(--primary-display-font);
-  font-weight: 400;
+  font-weight: 600;
   font-style: normal;
 }
 
