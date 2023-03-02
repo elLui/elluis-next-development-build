@@ -11,23 +11,23 @@ import Grid from '@mui/material/Grid';
 
 
 
-const inter = Inter( { subsets : [ 'latin' ] } )
-
-
-
-
 export default function Home() {
 	return (
 
-		<Grid2 container spacing={ 2 }>
-			<Grid2 item xs={ 12 } md={ 6 }>
+		<div>
+			<div>
 				<Hero/>
-			</Grid2>
-			<Grid2 item xs={ 12 } md={ 6 }>
+			</div>
+			<div>
 				<FeaturedPosts/>
-
-			</Grid2>
-		</Grid2>
+			</div>
+		</div>
 
 	)
 }
+
+
+
+
+const inter = Inter( { subsets : [ 'latin' ] } )
+
