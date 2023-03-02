@@ -1,9 +1,26 @@
 /**
+* Adobe Fonts Imports
 * @source https://fonts.adobe.com/fonts/objektiv-variable
 * @source https://fonts.adobe.com/fonts/louvette-banner-variable
  */
 @import url("https://use.typekit.net/ptz3vfb.css");
 @import url("https://use.typekit.net/ptz3vfb.css");
+
+
+
+// experimental mdc-color-themes
+$mdc-theme-primary: #FEDBD0;
+$mdc-theme-on-primary: #442C2E;
+$mdc-theme-secondary: #FEEAE6;
+$mdc-theme-on-secondary: #442C2E;
+$mdc-theme-surface: #FFFBFA;
+$mdc-theme-on-surface: #442C2E;
+$mdc-theme-background: #FFFFFF;
+$mdc-theme-on-background: #442C2E;
+
+
+
+
 
 // CSS VARIABLES :: INSERTED @ROOT :: TODO :: REFACTOR :: SCSS STYLE ENGINE
 :root {
@@ -70,6 +87,9 @@
 	--bp-medium: 50em; //  800px
 	--bp-large: 62.5em; // 1000px
 	--bp-xlarge: 75em; // 1200px
+
+
+
 
 
 	}
@@ -161,18 +181,6 @@ button {
 	}
 
 
-//font-family: "louvette-banner", serif;
-//font-weight: 400;
-//font-style: normal;
-//
-//font-family: "louvette-banner", serif;
-//font-weight: 400;
-//font-style: italic;
-//
-//font-family: "louvette-banner", serif;
-//font-weight: 700;
-//font-style: normal;
-//.example {
-//  font-family: "objektiv-variable", sans-serif;
-//  font-variation-settings: 'wght' 400;
-//}
+
+
+// added styles on this experiment

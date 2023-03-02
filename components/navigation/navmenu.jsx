@@ -13,11 +13,11 @@ export default function NavMenu() {
 	const navItems = nav_data || [];
 
 	return ( <div className={ styles.navMenu }>
-		<Grid2 container spacing={ 2 }>
+		<div>
 
 			<NavItem  item nav-data-item={ {... nav_data }}/>
 
-		</Grid2>
+		</div>
 	</div> );
 }
 
