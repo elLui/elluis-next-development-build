@@ -16,7 +16,7 @@ export default function Hero() {
 
 
 			<div className={ styles.image }>
-			<Image src={ user_image_placeholder } alt={ "user image placeholder" } width={ 1920 } height={ 1080 }/>
+			{/* <Image src={ user_image_placeholder } alt={ "user image placeholder" } width={ 1920 } height={ 1080 }/> */}
 			</div>
 
 			<h1>elluis.codes</h1>

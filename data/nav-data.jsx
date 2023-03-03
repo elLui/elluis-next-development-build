@@ -14,7 +14,7 @@ export const nav_data = [
 		id : generateUniqueId(), label : "about", link : "/about", isActive : false, icon : <GlobeAmericas/>,
 
 	}, {
-		id : generateUniqueId(), label : "contact", link : "/contact", isActive : false, icon : <GlobeAmericas/>,
+		id : generateUniqueId(), label : "contact", link : "/about/contact", isActive : false, icon : <GlobeAmericas/>,
 
 	}, {
 		id : generateUniqueId(), label : "projects", link : "/projects", isActive : false, icon : <GlobeAmericas/>,
