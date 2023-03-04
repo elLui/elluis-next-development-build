@@ -9,8 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
     "@heroicons/react": "^2.0.16",
-    "@react-three/fiber": "^8.11.6",
+    "@mui/material": "^5.11.11",
+    "@react-three/fiber": "^8.11.7",
     "clsx": "^1.2.1",
     "css-loader": "^6.7.3",
     "eslint": "8.35.0",
