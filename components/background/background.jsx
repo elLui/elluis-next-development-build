@@ -1,10 +1,14 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-import { AspectRatio } from "@chakra-ui/react";
+import { AspectRatio, Box, styled } from "@chakra-ui/react";
 import backgroundVideo from "../../public/assets/video/AdobeStock_255259620.mp4";
 import { css } from "@emotion/react";
+import { div } from "three/nodes";
 
-const backgroundVideoStyles = css`
+
+
+
+const BackgroundVideoStyles = styled( Box )`
   .videoBG {
     position: absolute;
 
@@ -23,7 +27,8 @@ const backgroundVideoStyles = css`
     100% {
       //transform: translateY(-100%);
       //transform: scale(0.25);
-    }`;
+    }
+  }`;
 
 
 
@@ -46,14 +51,15 @@ export default function BackgroundVideo() {
 	
 	
 	return (
-		
-		
-		<AspectRatio ratio={ aspectRatio } css={backgroundVideoStyles}>
-			{/* playsInline is needed for IOS */ }
-			<video playsInline autoPlay muted loop>
-				<source src={ backgroundVideo } type="video/mp4"/>
-			</video>
-		</AspectRatio>
+		<BackgroundVideoStyles>
+			
+			<AspectRatio ratio={ aspectRatio } css={ backgroundVideoStyles }>
+				{/* playsInline is needed for IOS */ }
+				<video playsInline autoPlay muted loop>
+					<source src={ backgroundVideo } type="video/mp4"/>
+				</video>
+			</AspectRatio>
+		</BackgroundVideoStyles>
 	
 	
 	);
