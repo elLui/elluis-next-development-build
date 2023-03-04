@@ -1,11 +1,9 @@
 "use client"
 import { nav_data } from "@/data/nav-data";
-import Grid2 from "@mui/material/Unstable_Grid2";
 // NavItem.jsx
 import { motion } from "framer-motion";
 import Link from "next/link";
 import clsx from "clsx";
-import { Grid } from "@mui/material";
 import styles from "components/navigation/nav-item/nav-item.module.scss";
 
 
