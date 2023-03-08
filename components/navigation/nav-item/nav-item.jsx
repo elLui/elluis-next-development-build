@@ -1,37 +1,47 @@
-"use client"
-import { nav_data } from "@/data/nav-data";
-// NavItem.jsx
+"use client";
+
 import { motion } from "framer-motion";
 import Link from "next/link";
-import clsx from "clsx";
-import styles from "components/navigation/nav-item/nav-item.module.scss";
+import styled from "styled-components";
+import { nav_data } from "@/data/nav-data";
 
 
 
 
-export default function NavItem( { nav_data } ) {
-
-	//	const { id, label, link, isActive, icon } = nav_data;
+const NavItemList = styled.ul`
 
 
 
 
+
+`;
+
+
+export default function NavItem( {} ) {
+	
 	return (
-		//		<Grid2 item spacing={0} xs={12} sm={6} md={4} lg={3}>
-		//			<li className={ styles.navItem }>
-		//				<Link href={ link } className={ styles.navLink } title={ label }>
-		//					{ id }:{ label }:{ link }:{ isActive }:{ icon }
-		//
-		//				</Link>
-		//			<h1>hello elluis, you are special today</h1>
-		//			</li>
-		//		</Grid2>
-
-		<>
-			<h1>Nav Item Placeholder</h1>
-
-		</>
-
+		
+		
+		<NavItemList>
+			{
+				
+				nav_data.map( ( nav_item ) => {
+					
+					return (
+						
+						<li key={ nav_item.id }>
+							<Link href={ nav_item.link } className="navLink">
+								{ nav_item.label }
+								<br/>
+								<div className="icon_wrapper">
+									{ nav_item.icon }
+								</div>
+							</Link>
+						</li>
+					);
+				} ) }
+		</NavItemList>
+	
 	);
 }
 

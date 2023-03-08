@@ -1,6 +1,7 @@
 import Hero from "@/components/hero/hero";
 import {  Inter } from 'next/font/google'
 import { Fragment } from "react";
+import FeaturedPosts from "@/components/featured-posts/featured-posts";
 
 
 
@@ -11,7 +12,8 @@ export default function Home() {
 	return (
 
 		<Fragment>
-			<Hero/>
+			<Hero />
+			<FeaturedPosts/>
 
 
 		</Fragment>

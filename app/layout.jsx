@@ -1,6 +1,3 @@
-
-
-
 import BackgroundVideo from "@/components/background/background";
 import NavMenu from "@/components/navigation/navmenu";
 
