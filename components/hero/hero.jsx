@@ -1,8 +1,8 @@
 "use client";
-import Image from "next/image";
-import user_image_placeholder from "../../public/assets/images/11.png";
-import styled from "styled-components";
 
+import { motion, AnimatePresence } from "framer-motion";
+import { useState } from "react";
+import styled from "styled-components";
 
 
 
@@ -48,30 +48,61 @@ const HeroSectionStyles = styled.section`
 
 `;
 
+const items = [ {
+    id : "item-1", title : "item 1", subtitle : "item 1 subtitle"
+}, {
+    id : "item-2", title : "item 2", subtitle : "item 2 subtitle"
+}, {
+    id : "item-3", title : "item 3", subtitle : "item 3 subtitle"
+} ];
+
 
 
 export default function Hero() {
-	
-	
-	return (
-		
-		<section className="hero">
-			<h3>a place</h3>
-			
-			
-			<div className="image">
-				{/* <Image src={ user_image_placeholder } alt={ "user image placeholder" } width={ 1920 } height={ 1080 }/> */ }
-			</div>
-			
-			<h1>elluis.codes</h1>
-			
-			
-			<p>to think</p>
-			<p>of things</p>
-		</section>
-	
-	);
-	
-	
-	
+    
+    
+    
+    const [ selectedId, setSelectedId ] = useState( null );
+    return ( <div>
+        
+        <HeroSectionStyles className="hero">
+            <h3>a place</h3>
+            {
+                
+                items.map( item => (
+                    
+                    <motion.div layoutId={ item.id } onClick={ () => setSelectedId( item.id ) }>
+                        <motion.h5>{ item.subtitle }</motion.h5>
+                        <motion.h2>{ item.title }</motion.h2>
+                    </motion.div>
+                
+                ) ) }
+            
+            <AnimatePresence>
+                
+                
+                { selectedId && (
+                    
+                    <motion.div layoutId={ selectedId }>
+                        <motion.h5>{ item.subtitle }</motion.h5>
+                        <motion.h2>{ item.title }</motion.h2>
+                        <motion.button onClick={ () => setSelectedId( null ) }/>
+                    </motion.div> ) }
+            
+            </AnimatePresence>
+            <div className="image">
+                {/* <Image src={ user_image_placeholder } alt={ "user image placeholder" } width={ 1920 } height={ 1080 }/> */ }
+            </div>
+            
+            <h1>elluis.codes</h1>
+            <p>to think</p>
+            <p>of things</p>
+        </HeroSectionStyles>
+    </div> );
 }
+
+
+
+
+
+

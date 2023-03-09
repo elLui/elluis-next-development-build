@@ -18,7 +18,7 @@ export default function RootLayout( { children } ) {
 		<html lang="en">
 		<body>
 		<GlobalStyles/>
-		{/*<BackgroundVideo/>*/}
+		<BackgroundVideo/>
 		<NavMenu/>
 		{ children }
 		</body>
